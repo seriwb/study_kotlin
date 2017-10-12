@@ -27,8 +27,8 @@ fun main(args: Array<String>) {
     println("2, 4, 6 is grater than 5? : ${contains(listOf(2, 4, 6), ::isGraterThan5)}")
     println("7, 5, 4 is multiple of 3? : ${contains(listOf(7, 5, 4), ::isMultipleOf3)}")
 
-    println(contains(listOf(2, 4, 6), {5 < it }))
-    println(contains(listOf(7, 5, 4), {n -> n % 3 == 0}))
+    println(contains(listOf(2, 4, 6), { 5 < it }))
+    println(contains(listOf(7, 5, 4), { n -> n % 3 == 0 }))
     println(contains(listOf(7, 5, 4), fun(n) = n % 3 == 0))     // 無名関数バージョン
 
     println(sum((1..10).toList()))
